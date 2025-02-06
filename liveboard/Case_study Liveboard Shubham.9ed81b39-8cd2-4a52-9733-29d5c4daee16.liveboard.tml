@@ -599,15 +599,6 @@ liveboard:
         client_state: ""
       display_mode: TABLE_MODE
     viz_guid: f36911bb-b491-45ff-a59c-870c49f3d70d
-  filters:
-  - column:
-    - case_study_worksheet::Product Name
-    oper: in
-    values:
-    - cheese
-    is_mandatory: false
-    is_single_value: false
-    display_name: ""
   layout:
     tabs:
     - name: |-
@@ -671,6 +662,9 @@ liveboard:
         height: 10
         width: 6
       id: 828dd385-1db6-422d-a38a-5eaffcb64c95
+    - name: Tab2
+      description: ""
+      id: 3831cab2-ff15-4aa5-81cb-f2836e9807ed
   parameter_overrides:
   - key: 028dc081-a901-46ee-bebd-4ad5cbc92909
     value:
@@ -678,5 +672,3 @@ liveboard:
   ordered_chips:
   - name: case_study_worksheet::b
     type: PARAMETER
-  - name: case_study_worksheet::Product Name
-    type: FILTER
