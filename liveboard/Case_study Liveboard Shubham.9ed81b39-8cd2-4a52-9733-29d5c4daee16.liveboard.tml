@@ -676,7 +676,7 @@ liveboard:
     value:
       name: case_study_worksheet::b
   ordered_chips:
-  - name: case_study_worksheet::Product Name
-    type: FILTER
   - name: case_study_worksheet::b
     type: PARAMETER
+  - name: case_study_worksheet::Product Name
+    type: FILTER

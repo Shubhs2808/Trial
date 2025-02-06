@@ -1,36 +1,33 @@
 guid: 196b4cda-3a5c-4643-8b7f-f7f8884606b1
-worksheet:
+model:
   name: email test
-  tables:
+  model_tables:
   - name: EMAIL_TRIGGER
     fqn: 71e79d23-a399-4f29-8b7b-dd903f5fa08c
-  table_paths:
-  - id: EMAIL_TRIGGER_1
-    table: EMAIL_TRIGGER
-  worksheet_columns:
+  columns:
   - name: Settlementamount
-    column_id: EMAIL_TRIGGER_1::SETTLEMENTAMOUNT
+    column_id: EMAIL_TRIGGER::SETTLEMENTAMOUNT
     properties:
       column_type: MEASURE
       aggregation: SUM
       index_type: DONT_INDEX
   - name: Rewardsbalance
-    column_id: EMAIL_TRIGGER_1::REWARDSBALANCE
+    column_id: EMAIL_TRIGGER::REWARDSBALANCE
     properties:
       column_type: MEASURE
       aggregation: SUM
       index_type: DONT_INDEX
   - name: Consultantemail
-    column_id: EMAIL_TRIGGER_1::CONSULTANTEMAIL
+    column_id: EMAIL_TRIGGER::CONSULTANTEMAIL
     properties:
       column_type: ATTRIBUTE
   - name: Sinnumber
-    column_id: EMAIL_TRIGGER_1::SINNUMBER
+    column_id: EMAIL_TRIGGER::SINNUMBER
     properties:
       column_type: ATTRIBUTE
       index_type: DONT_INDEX
   - name: Daystillquoteexpire
-    column_id: EMAIL_TRIGGER_1::DAYSTILLQUOTEEXPIRE
+    column_id: EMAIL_TRIGGER::DAYSTILLQUOTEEXPIRE
     properties:
       column_type: MEASURE
       aggregation: SUM
