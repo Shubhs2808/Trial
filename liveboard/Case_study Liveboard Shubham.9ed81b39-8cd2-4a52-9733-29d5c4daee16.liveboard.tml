@@ -599,6 +599,12 @@ liveboard:
         client_state: ""
       display_mode: TABLE_MODE
     viz_guid: f36911bb-b491-45ff-a59c-870c49f3d70d
+  filters:
+  - column:
+    - email test::Consultantemail
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
   layout:
     tabs:
     - name: |-
@@ -670,5 +676,7 @@ liveboard:
     value:
       name: case_study_worksheet::b
   ordered_chips:
+  - name: email test::Consultantemail
+    type: FILTER
   - name: case_study_worksheet::b
     type: PARAMETER
