@@ -599,6 +599,71 @@ liveboard:
         client_state: ""
       display_mode: TABLE_MODE
     viz_guid: f36911bb-b491-45ff-a59c-870c49f3d70d
+  - id: Viz_12
+    answer:
+      name: Total Unit Cost Usd by Product Name
+      description: "Product Name \"eggs\", \"cheese\" have significantly higher Total Unit Cost Usd out of 9 values."
+      tables:
+      - id: case_study_worksheet
+        name: case_study_worksheet
+        fqn: 7e675e2f-93a5-4051-9c1e-2d8ed622554b
+      formulas:
+      - id: Inventory
+        name: Inventory
+        expr: "if ( [Quantity Purchased] != null ) then [Quantity Purchased] * [Unit Cost Usd] else null"
+        was_auto_generated: false
+      - id: sales
+        name: sales
+        expr: "[Quantity Sold] * [Unit Retail Price Usd]"
+        was_auto_generated: false
+      search_query: "top 50 sort by [Unit Cost Usd] descending [Product Name] [Unit Cost Usd]"
+      answer_columns:
+      - name: Product Name
+      - name: Total Unit Cost Usd
+      table:
+        table_columns:
+        - column_id: Product Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Unit Cost Usd
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Product Name
+        - Total Unit Cost Usd
+        client_state: ""
+      chart:
+        type: BAR
+        chart_columns:
+        - column_id: Product Name
+          conditional_formatting: {}
+        - column_id: Total Unit Cost Usd
+          conditional_formatting:
+            rule:
+            - range:
+                min: 6.989333333333334
+                max: 1.7976931348623157E308
+              color: '#2770ef'
+              plotAsBand: false
+            - range:
+                min: -1.7976931348623157E308
+                max: 1.5706666666666669
+              color: '#2770ef'
+              plotAsBand: false
+            - range:
+                min: -1.7976931348623157E308
+                max: 1.7976931348623157E308
+              color: '#bec6d0'
+              plotAsBand: false
+        axis_configs:
+        - x:
+          - Product Name
+          "y":
+          - Total Unit Cost Usd
+        client_state: "{\"markersEnabled\":true,\"yAxisShared\":false}"
+      display_mode: CHART_MODE
+      parameter_values:
+      - key: b
+        value: "1"
+    viz_guid: d395d4fb-a8fa-407b-a9ea-f46d407c4d90
   filters:
   - column:
     - email test::Consultantemail
@@ -667,6 +732,7 @@ liveboard:
         "y": 47
         height: 10
         width: 6
+      - visualization_id: Viz_12
       id: 828dd385-1db6-422d-a38a-5eaffcb64c95
     - name: Tab2
       description: ""
