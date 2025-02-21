@@ -670,6 +670,13 @@ liveboard:
     is_mandatory: false
     is_single_value: false
     display_name: ""
+  - column:
+    - case_study_worksheet::Date
+    is_mandatory: false
+    date_filter:
+      type: YESTERDAY
+      oper: =
+    display_name: ""
   layout:
     tabs:
     - name: |-
@@ -733,6 +740,10 @@ liveboard:
         height: 10
         width: 6
       - visualization_id: Viz_12
+        x: 6
+        "y": 47
+        height: 8
+        width: 6
       id: 828dd385-1db6-422d-a38a-5eaffcb64c95
     - name: Tab2
       description: ""
@@ -746,3 +757,5 @@ liveboard:
     type: FILTER
   - name: case_study_worksheet::b
     type: PARAMETER
+  - name: case_study_worksheet::Date
+    type: FILTER
