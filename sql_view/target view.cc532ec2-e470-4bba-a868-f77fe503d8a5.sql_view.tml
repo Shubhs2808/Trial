@@ -3,7 +3,6 @@ sql_view:
   name: target view
   connection:
     name: Case_study_sa
-    fqn: 2e3376fe-7e7e-4120-beac-a8e967ec802c
   sql_query: "SELECT \n    DATEADD(DAY, seq4(), '2025-01-01') AS date_column,\n    50 AS daily_value\nFROM TABLE(GENERATOR(ROWCOUNT => 30))"
   sql_view_columns:
   - name: DATE_COLUMN
