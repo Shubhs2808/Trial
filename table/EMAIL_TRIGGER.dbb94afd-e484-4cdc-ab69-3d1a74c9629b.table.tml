@@ -1,4 +1,4 @@
-guid: 71e79d23-a399-4f29-8b7b-dd903f5fa08c
+guid: dbb94afd-e484-4cdc-ab69-3d1a74c9629b
 table:
   name: EMAIL_TRIGGER
   db: DB_CASESTUDY
@@ -6,7 +6,7 @@ table:
   db_table: EMAIL_TRIGGER
   connection:
     name: Case_study_sa
-    fqn: 2e3376fe-7e7e-4120-beac-a8e967ec802c
+    fqn: 94f0583e-d942-4142-815e-2b43445deee6
   columns:
   - name: SETTLEMENTAMOUNT
     db_column_name: SETTLEMENTAMOUNT
