@@ -1,0 +1,19 @@
+guid: cc532ec2-e470-4bba-a868-f77fe503d8a5
+sql_view:
+  name: target view
+  connection:
+    name: Case_study_sa
+    fqn: 2e3376fe-7e7e-4120-beac-a8e967ec802c
+  sql_query: "SELECT \n    DATEADD(DAY, seq4(), '2025-01-01') AS date_column,\n    50 AS daily_value\nFROM TABLE(GENERATOR(ROWCOUNT => 30))"
+  sql_view_columns:
+  - name: DATE_COLUMN
+    sql_output_column: DATE_COLUMN
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: DAILY_VALUE
+    sql_output_column: DAILY_VALUE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
