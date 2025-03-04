@@ -406,7 +406,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Id\",\"columnProperty\": {}},{\"columnId\": \"Total demo\",\"columnProperty\": {}},{\"columnId\": \"Total Unit Cost Usd\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"4fd4e618-6da9-4f43-b743-bc8d41c8cd9b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total demo\"],\"isOpposite\": false}},{\"id\": \"ae19119e-617d-46f3-bb8f-ce3bb128578e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Unit Cost Usd\"],\"isOpposite\": true}},{\"id\": \"132769e7-4388-43e4-bc40-13cc16d0e6b0\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product Id\"]}}],\"systemSeriesColors\": [{\"serieName\": \"4d693a9e-48e2-475f-8f33-99a3f101f667\",\"color\": \"#48D1E0\"},{\"serieName\": \"0d4fdf39-b10c-4b50-9cea-f8f0cd43700a\",\"color\": \"#2E75F0\"}]}"
       display_mode: TABLE_MODE
       parameters:
-      - id: fb8478c2-60ea-4083-97d5-ab5f1d9c0356
+      - id: 4f20bb94-f522-4cf9-b1c6-d8bebf705a06
         name: a
         data_type: INT64
         default_value: "1"
@@ -585,6 +585,7 @@ liveboard:
         - Consultantemail
         - Total Settlementamount
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Sinnumber\",\"columnProperty\": {}},{\"columnId\": \"Consultantemail\",\"columnProperty\": {}},{\"columnId\": \"Total Settlementamount\",\"columnProperty\": {}}]}"
       chart:
         type: COLUMN
         chart_columns:
@@ -597,6 +598,7 @@ liveboard:
           "y":
           - Total Settlementamount
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Sinnumber\",\"columnProperty\": {}},{\"columnId\": \"Consultantemail\",\"columnProperty\": {}},{\"columnId\": \"Total Settlementamount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"9644d95d-dba3-4f88-819b-92e9b3eb491b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Settlementamount\"],\"isOpposite\": false}},{\"id\": \"a8a9da34-d5ba-4e6a-87de-34042519c4ff\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Consultantemail\"]}}]}"
       display_mode: TABLE_MODE
     viz_guid: f36911bb-b491-45ff-a59c-870c49f3d70d
   - id: Viz_12
@@ -630,11 +632,11 @@ liveboard:
         - Product Name
         - Total Unit Cost Usd
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Total Unit Cost Usd\",\"columnProperty\": {}}]}"
       chart:
         type: BAR
         chart_columns:
         - column_id: Product Name
-          conditional_formatting: {}
         - column_id: Total Unit Cost Usd
           conditional_formatting:
             rule:
@@ -659,11 +661,46 @@ liveboard:
           "y":
           - Total Unit Cost Usd
         client_state: "{\"markersEnabled\":true,\"yAxisShared\":false}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"markersEnabled\": true,\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Unit Cost Usd\",\"columnProperty\": {\"conditionalFormatting\": {\"rows\": [{\"operator\": \"IS_BETWEEN\",\"rangeValues\": {\"min\": 6.989333333333334,\"max\": 1.7976931348623157E308},\"plotAsBand\": false,\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#2770ef\"},\"comparisonType\": \"VALUE_BASED\",\"isHighlightRow\": false},{\"operator\": \"IS_BETWEEN\",\"rangeValues\": {\"min\": -1.7976931348623157E308,\"max\": 1.5706666666666669},\"plotAsBand\": false,\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#2770ef\"},\"comparisonType\": \"VALUE_BASED\",\"isHighlightRow\": false},{\"operator\": \"IS_BETWEEN\",\"rangeValues\": {\"min\": -1.7976931348623157E308,\"max\": 1.7976931348623157E308},\"plotAsBand\": false,\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#bec6d0\"},\"comparisonType\": \"VALUE_BASED\",\"isHighlightRow\": false}]}}},{\"columnId\": \"Product Name\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"390ea75c-8e2a-436b-a510-12bd8a9524cf\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Unit Cost Usd\"],\"isOpposite\": false}},{\"id\": \"b362e13e-b4ea-4c48-a46d-25808792bba0\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product Name\"]}}]}"
       display_mode: CHART_MODE
       parameter_values:
       - key: b
         value: "1"
     viz_guid: d395d4fb-a8fa-407b-a9ea-f46d407c4d90
+  - id: Viz_13
+    answer:
+      name: Total sales by county
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "[sales] [county]"
+      answer_columns:
+      - name: Total sales
+      - name: county
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: county
+          show_headline: false
+        ordered_column_ids:
+        - county
+        - Total sales
+        client_state: ""
+      chart:
+        type: GEO_AREA
+        chart_columns:
+        - column_id: Total sales
+        - column_id: county
+        axis_configs:
+        - x:
+          - county
+          "y":
+          - Total sales
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 5716beb6-c6f3-4595-b14d-7c36441cd089
   filters:
   - column:
     - email test::Consultantemail
@@ -747,6 +784,8 @@ liveboard:
       id: 828dd385-1db6-422d-a38a-5eaffcb64c95
     - name: Tab2
       description: ""
+      tiles:
+      - visualization_id: Viz_13
       id: 3831cab2-ff15-4aa5-81cb-f2836e9807ed
   parameter_overrides:
   - key: 028dc081-a901-46ee-bebd-4ad5cbc92909
