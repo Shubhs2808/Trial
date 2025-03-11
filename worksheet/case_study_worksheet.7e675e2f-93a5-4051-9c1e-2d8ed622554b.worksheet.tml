@@ -98,7 +98,7 @@ model:
       column_type: ATTRIBUTE
       synonym_type: USER_DEFINED
       custom_order:
-      - cookis
+      - cookies
       - soap
       - cheese
       - plates
