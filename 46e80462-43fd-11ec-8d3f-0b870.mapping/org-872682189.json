@@ -27,7 +27,9 @@
   "originalGuid" : "231cebae-812e-4445-9d7c-0d1bf59cd282",
   "mappedGuid" : "4f945c0d-b502-40eb-a3b9-b8c7821c1d78",
   "counter" : 0,
-  "additionalMapping" : { }
+  "additionalMapping" : {
+    "schema: SA_CASESTUDY" : "schema: PUBLIC"
+  }
 }, {
   "originalGuid" : "5301024b-250c-4511-86ce-51591609249a",
   "mappedGuid" : "9ce4e4d8-f4d2-45cd-b64f-cdbd71ebb1f5",
