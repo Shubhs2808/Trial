@@ -11,7 +11,7 @@
 }, {
   "originalGuid" : "db35aea5-9dcf-4afc-a29e-0d33381894b4",
   "mappedGuid" : "db35aea5-9dcf-4afc-a29e-0d33381894b4",
-  "counter" : 1,
+  "counter" : 2,
   "additionalMapping" : { }
 }, {
   "originalGuid" : "7e675e2f-93a5-4051-9c1e-2d8ed622554b",
@@ -47,6 +47,11 @@
   "additionalMapping" : { }
 }, {
   "originalGuid" : "6c4f76c9-8b43-4f06-ad0e-a59f81d03ff5",
+  "mappedGuid" : "4f945c0d-b502-40eb-a3b9-b8c7821c1d78",
+  "counter" : 0,
+  "additionalMapping" : { }
+}, {
+  "originalGuid" : "4f945c0d-b502-40eb-a3b9-b8c7821c1d78",
   "mappedGuid" : "4f945c0d-b502-40eb-a3b9-b8c7821c1d78",
   "counter" : 0,
   "additionalMapping" : { }
