@@ -1,0 +1,53 @@
+[ {
+  "originalGuid" : "dbb94afd-e484-4cdc-ab69-3d1a74c9629b",
+  "mappedGuid" : "db35aea5-9dcf-4afc-a29e-0d33381894b4",
+  "counter" : 0,
+  "additionalMapping" : { }
+}, {
+  "originalGuid" : "cc532ec2-e470-4bba-a868-f77fe503d8a5",
+  "mappedGuid" : "9282adcb-92a3-498d-b36a-0edbdbc82da7",
+  "counter" : 0,
+  "additionalMapping" : { }
+}, {
+  "originalGuid" : "db35aea5-9dcf-4afc-a29e-0d33381894b4",
+  "mappedGuid" : "db35aea5-9dcf-4afc-a29e-0d33381894b4",
+  "counter" : 0,
+  "additionalMapping" : { }
+}, {
+  "originalGuid" : "7e675e2f-93a5-4051-9c1e-2d8ed622554b",
+  "mappedGuid" : "1475a97e-81ca-474e-91f4-c11a417e6056",
+  "counter" : 0,
+  "additionalMapping" : { }
+}, {
+  "originalGuid" : "557eb162-cbc8-43f3-902f-239270def89e",
+  "mappedGuid" : "45211c87-d560-4996-ae14-a099bfb2e596",
+  "counter" : 0,
+  "additionalMapping" : { }
+}, {
+  "originalGuid" : "231cebae-812e-4445-9d7c-0d1bf59cd282",
+  "mappedGuid" : "4f945c0d-b502-40eb-a3b9-b8c7821c1d78",
+  "counter" : 0,
+  "additionalMapping" : {
+    "schema: SA_CASESTUDY" : "schema: PUBLIC"
+  }
+}, {
+  "originalGuid" : "5301024b-250c-4511-86ce-51591609249a",
+  "mappedGuid" : "9ce4e4d8-f4d2-45cd-b64f-cdbd71ebb1f5",
+  "counter" : 0,
+  "additionalMapping" : { }
+}, {
+  "originalGuid" : "77481211-7927-43c7-8d32-ab5c5ab6dced",
+  "mappedGuid" : "038757fd-fe2d-4d43-8d69-8d891922e37c",
+  "counter" : 0,
+  "additionalMapping" : { }
+}, {
+  "originalGuid" : "196b4cda-3a5c-4643-8b7f-f7f8884606b1",
+  "mappedGuid" : "71ff21f2-edc8-4563-b6e3-cfec0adaeff6",
+  "counter" : 0,
+  "additionalMapping" : { }
+}, {
+  "originalGuid" : "6c4f76c9-8b43-4f06-ad0e-a59f81d03ff5",
+  "mappedGuid" : "4f945c0d-b502-40eb-a3b9-b8c7821c1d78",
+  "counter" : 0,
+  "additionalMapping" : { }
+} ]
